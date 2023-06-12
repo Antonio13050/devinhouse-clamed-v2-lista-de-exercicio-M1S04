@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lista de exercícios</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="exerc5.js"></script>
+  </head>
+  <body>
+    <header class="mb-4">
+      <nav
+        class="navbar bg-dark border-bottom border-bottom-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid w-75">
+          <a class="navbar-brand fs-2" href="../index.html"
+            >Lista de exercícios [M1S04]</a
+          >
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid w-75">
+      <div class="descricao">
+        <h1 class="py-3">Exercício 5 - Média Ponderada</h1>
+        <p>
+          Peça ao usuário que digite três notas e seus respectivos pesos. Em
+          seguida, escreva um programa em JavaScript que calcule a média
+          ponderada dessas notas. A média ponderada é calculada multiplicando
+          cada nota pelo seu peso correspondente, somando todos os resultados e
+          dividindo pelo somatório dos pesos. Exiba o resultado na tela.
+        </p>
+      </div>
+      <!--Resolução-->
+      <div class="resolucao">
+        <form action="">
+          <!--Nota 1-->
+          <div class="input-group gap-5">
+            <div class="mb-3">
+              <label for="nota1" class="form-label">Nota 1</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nota1"
+                placeholder="Digite a nota 1"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="peso1" class="form-label">Peso da nota 1</label>
+              <input
+                type="text"
+                class="form-control"
+                id="peso1"
+                placeholder="Digite o peso da nota 1"
+                required
+              />
+            </div>
+          </div>
+          <!--Final nota 1-->
+
+          <!--Nota 2-->
+          <div class="input-group gap-5 my-5">
+            <div class="mb-3">
+              <label for="nota1" class="form-label">Nota 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nota2"
+                placeholder="Digite a nota 2"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="peso2" class="form-label">Peso da nota 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="peso2"
+                placeholder="Digite o peso da nota 2"
+                required
+              />
+            </div>
+          </div>
+          <!--Final nota 2-->
+
+          <!--Nota 3-->
+          <div class="input-group gap-5">
+            <div class="mb-3">
+              <label for="nota3" class="form-label">Nota 3</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nota3"
+                placeholder="Digite a nota 3"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="peso3" class="form-label">Peso da nota 3</label>
+              <input
+                type="text"
+                class="form-control"
+                id="peso3"
+                placeholder="Digite o peso da nota 3"
+                required
+              />
+            </div>
+          </div>
+          <!--Final nota 3-->
+
+          <div class="my-4">
+            <h1 id="resultado"></h1>
+          </div>
+
+          <div class="buttons">
+            <button onclick="exibir()" class="btn btn-primary" type="button">
+              Exibir os dados
+            </button>
+            <button class="btn btn-primary" type="reset">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <!--------------------------------->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
