@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../style.css" />
-    <script src="exerc1.js"></script>
+    <script src="exerc2.js"></script>
   </head>
   <body>
     <header class="mb-4">
@@ -28,57 +28,48 @@
     </header>
     <div class="container-fluid w-75">
       <div class="descricao">
-        <h1 class="py-3">Exercício 1 - Média com JS</h1>
+        <h1 class="py-3">Exercício 2 - Calculadora de IMC</h1>
         <p>
-          Vamos praticar o uso de variáveis em um exercício de cálculo de média.
-          Você precisa escrever um programa em JavaScript que peça ao usuário
-          para digitar três números. Depois disso, você deve usar variáveis para
-          armazenar esses números e calcular a média entre eles. Por fim, seu
-          programa deve exibir o resultado da média na tela.
+          Vamos criar uma calculadora de Índice de Massa Corporal (IMC). Você
+          precisa escrever um programa em JavaScript que solicite ao usuário o
+          peso e a altura. Em seguida, utilize os operadores matemáticos
+          corretos para calcular o IMC e exiba o resultado na tela.
         </p>
       </div>
+      <!--Resolução-->
       <div class="resolucao">
         <form action="">
           <div class="mb-3">
-            <label for="numero1" class="form-label">Número 1</label>
+            <label for="peso" class="form-label">Peso (ex.: 69.2)</label>
             <input
               type="text"
               class="form-control"
-              id="numero1"
-              placeholder="Digite um número"
+              id="peso"
+              placeholder="Digite o peso"
               required
             />
           </div>
           <div class="mb-3">
-            <label for="numero2" class="form-label">Número 2</label>
+            <label for="altura" class="form-label">Altura (ex.: 1.80)</label>
             <input
               type="text"
               class="form-control"
-              id="numero2"
-              placeholder="Digite um número"
+              id="altura"
+              placeholder="Digite a altura"
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="numero3" class="form-label">Número 3</label>
-            <input
-              type="text"
-              class="form-control"
-              id="numero3"
-              placeholder="Digite um número"
-              required
-            />
-          </div>
+
           <div class="my-4">
             <h1 id="resultado"></h1>
           </div>
           <div class="buttons">
             <button
-              onclick="calculaMedia()"
+              onclick="calculaImc()"
               class="btn btn-primary"
               type="button"
             >
-              Resultado
+              Calcular
             </button>
             <button class="btn btn-primary" type="reset">Limpar</button>
           </div>
@@ -88,6 +79,46 @@
         </div>
       </div>
       <!--------------------------------->
+      <hr class="my-5" />
+      <table class="table caption-top">
+        <caption class="fs-2">
+          Interpretação do IMC
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">IMC</th>
+            <th scope="col">CLASSIFICAÇÃO</th>
+            <th scope="col">OBESIDADE (GRAU)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td scope="row">ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td scope="row">ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+          </tr>
+          <tr>
+            <td scope="row">ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+          </tr>
+          <tr>
+            <td scope="row">MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
